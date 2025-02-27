@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3R - Informatica</title>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdowns = document.querySelectorAll(".dropdown-submenu > a");
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        submenu.style.display = "block";
+                        submenu.style.position = "absolute";
+                        submenu.style.left = "100%";
+                    }
+                });
+            });
+        });
+
+    </script>
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    <!-- BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- ICONE DE GUIA DO NAVEGADOR -->
+    <link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="imagens/favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imagens/favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagens/favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imagens/favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagens/favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imagens/favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagens/favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imagens/favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imagens/favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagens/favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="imagens/favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+       <!-- BOTTOM NAVBAR -->
+      <!-- BOTTOM NAVBAR -->
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg m-0 p-0" id="bottom-navbar-container">
+        <div class="container-fluid navbar-item p-0" id="navbarNavAltMarkup">
+            <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button> 
+            
+            <ul class="navbar-nav ul-logo m-0 p-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="nav-item float-left ">
+                    <a href="#" class="navbar-brand p-0 m-0 img-fluid logo">
+                      <img src="imagens/logo/logo-removebg-preview.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                
+                <li class="nav-item">
+                    <a href="../site loja.html" class="nav-link">
+                        <i class="bi bi-house-door danger-color"></i> Home</a>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-basket2 danger-color"></i> comprar
+                    </a>
+                    <ul class="dropdown-menu border-danger">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">
+                                <i class="bi bi-box-seam danger-color"></i> Produtos
+                            </a>
+                            <ul class="dropdown-menu border-danger">
+                                
+                                <!-- Submenu Computador -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle " href="#">
+                                        <i class="bi bi-pc-display"></i> Computador
+                                    </a>
+                                    <ul class="dropdown-menu border-danger">
+                                        <li class="m-0"><a href="computer/c" class="dropdown-item light-color"><i class="bi bi-pc-display"></i> PC completo</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item"><i class="bi bi-motherboard"></i> Placa Mãe</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item"><i class="bi bi-memory"></i> Memória RAM</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item"><i class="bi bi-cpu"></i> Processador</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item"><i class="bi bi-pci-card"></i> Placa de Vídeo</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#new-products" class="dropdown-item"><i class="bi bi-battery-charging"></i> Fontes</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#new-products" class="dropdown-item"><i class="bi bi-pc"></i> Gabinetes</a></li>
+                                    </ul>
+                                </li>
+                    
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="">
+                                        <i class="bi bi-phone"></i> Celular
+                                    </a>
+                                    <ul class="dropdown-menu border-danger">
+                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item"><i class="bi bi-motherboard"></i> Capinha</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item"><i class="bi bi-memory"></i> Carregador</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item"><i class="bi bi-cpu"></i> Fones</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item"><i class="bi bi-pci-card"></i> Suporte</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#new-products" class="dropdown-item"><i class="bi bi-battery-charging"></i> lightning</a></li>
+                                        <li class="m-0"><hr class="dropdown-divider"></li>
+                                        <li class="m-0"><a href="#new-products" class="dropdown-item"><i class="bi bi-pc"></i> </a></li>
+                                    </ul>
+                                </li>
+                    
+                            </ul>
+                        </li>
+                        <li><hr class="dropdown-divider light-color"></li>
+                        <li>
+                            <a href="#produto-destaque" class="dropdown-item"><i class="bi bi-stars danger-color"></i> Destaque</a>
+                        </li>
+                            <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a href="#new-products" class="dropdown-item"><i class="bi bi-arrow-through-heart danger-color"></i> Promoções</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-gear"></i> Nossos serviços
+                    </a>
+                    <ul class="dropdown-menu border-danger">
+                        <li>
+                            <a href="#best-sellers" class="dropdown-item"><i class="bi bi-pc-display danger-color"></i> Problema com computador?</a>
+                        </li>
+                        <li><hr class="dropdown-divider light-color"></li>
+                        <li>
+                            <a href="#produto-destaque" class="dropdown-item"><i class="bi bi-phone danger-color"></i> Problema com celular?</a>
+                        </li>
+                            <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a href="#new-products" class="dropdown-item"><i class="bi bi-whatsapp danger-color"></i> Orçamento online:
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" target="_blank" class="nav-link"><i class="bi bi-images danger-color"></i> galeria de fotos</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="container w-100 h-100 mt-120">
+        <h2>Computador</h2>
+        
+    </div>
+    <!--BEST SELLER-->
+    <div class="container" id="best-sellers">
+        <h2 class="tittle text-danger">Mais vendidos  <i class="bi bi-arrow-down"></i></i></h2>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-basket2 danger-color"></i> Produtos
+                </a>
+                <ul class="dropdown-menu border-danger">
+                    
+                    <!-- Submenu Computador -->
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle light-color" href="#">
+                            <i class="bi bi-pc-display"></i> Computador
+                        </a>
+                        <ul class="dropdown-menu border-danger">
+                            <li class="m-0"><a href="computer/computer.html" class="dropdown-item light-color"><i class="bi bi-pc-display"></i> PC completo</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="dropdown-submenu m-0">
+                                <a href="#" class="dropdown-item dropdown-toggle light-color" >
+                                    <i class="bi bi-pc-display"></i> Perifericos:</a>
+                                <ul class="dropdown-menu border-danger">
+                                    <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-display"></i> Monitor</a></li>
+                                    <li class="m-0"><hr class="dropdown-divider"></li>
+                                    <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Mouse </a></li>
+                                    <li class="m-0"><hr class="dropdown-divider"></li>
+                                    <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Teclado</a></li>
+                                    <li class="m-0"><hr class="dropdown-divider"></li>
+                                    <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Mouse Pad</a></li>
+                                    <li class="m-0"><hr class="dropdown-divider"></li>
+                                    <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> Caixa de som </a></li>
+                                    <li class="m-0"><hr class="dropdown-divider"></li>
+                                    <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
+                                </ul>
+                            </li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Placa Mãe</a>
+                                
+                        <ul class="dropdown-menu border-danger">
+                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Capinha</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Carregador</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Fones</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Suporte</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> lightning</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
+                        </ul>
+                            </li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Memória RAM</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Processador</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Placa de Vídeo</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> Fontes</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> Gabinetes</a></li>
+                        </ul>
+                    </li>
+        
+                    <li><hr class="dropdown-divider"></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle light-color" href="">
+                            <i class="bi bi-phone"></i> Celular
+                        </a>
+                        <ul class="dropdown-menu border-danger">
+                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Capinha</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Carregador</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Fones</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Suporte</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> lightning</a></li>
+                            <li class="m-0"><hr class="dropdown-divider"></li>
+                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
+                        </ul>
+                    </li>
+        
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- MOUSE: -->
+        <div class="row gy-4">
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/mouse/mouse 1.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 12000 DPI</p>
+                        <h5 class="card-title">Mouse Gamer logitech</h5>
+                        <p class="card-text text-success">R$ 77,99</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/mouse/mouse 2.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 2000 DPI</p>
+                        <h5 class="card-title">Mouse escritório - logitech</h5>
+                        <p class="card-text text-success">R$ 59,99</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/mouse/mouse 7.avif" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 40000 DPI</p>
+                        <h5 class="card-title">Gamer sem fio - Alienware</h5>
+                        <p class="card-text text-success">R$ 277,50</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/mouse/mouse 3.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 20000 DPI</p>
+                        <h5 class="card-title">Mouse Gamer - Redragon</h5>
+                        <p class="card-text text-success">R$ 177,65</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- TECLADOS:-->
+        <div class="row gy-4">
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/teclado/teclado 1.png" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 12000 DPI</p>
+                        <h5 class="card-title">Mouse Gamer logitech</h5>
+                        <p class="card-text text-success">R$ 77,99</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/teclado/teclado 2.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 2000 DPI</p>
+                        <h5 class="card-title">Mouse escritório - logitech</h5>
+                        <p class="card-text text-success">R$ 59,99</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/teclado/teclado 3.jpg" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 40000 DPI</p>
+                        <h5 class="card-title">Gamer sem fio - Alienware</h5>
+                        <p class="card-text text-success">R$ 277,50</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/teclado/teclado 4.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 20000 DPI</p>
+                        <h5 class="card-title">Mouse Gamer - Redragon</h5>
+                        <p class="card-text text-success">R$ 177,65</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- FONEs: -->
+        <div class="row gy-4">
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/fones/fone 1.png" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 12000 DPI</p>
+                        <h5 class="card-title">Mouse Gamer logitech</h5>
+                        <p class="card-text text-success">R$ 77,99</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/fones/fone 2.png" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 2000 DPI</p>
+                        <h5 class="card-title">Mouse escritório - logitech</h5>
+                        <p class="card-text text-success">R$ 59,99</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/fones/fone 3.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 40000 DPI</p>
+                        <h5 class="card-title">Gamer sem fio - Alienware</h5>
+                        <p class="card-text text-success">R$ 277,50</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card bg-secondary-1">
+                    <img src="imagens/produtos/fones/fone 4.webp" alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Mouse - 20000 DPI</p>
+                        <h5 class="card-title">Mouse Gamer - Redragon</h5>
+                        <p class="card-text text-success">R$ 177,65</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary text-dark"><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid" id="footer-links-container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-collumn">
+                    <h3>Páginas</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Categorias</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Promoções</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 footer-collumn" id="footer-center">
+                    <h3>InTime</h3>
+                    <p class="secondary-color">Alguma dúvida? Ligue para nós!</p>
+                    <p class="store-phone"><i class="bi bi-telephone"> (61) 9 9999-9999</i></p>
+                </div>
+                <div class="col-12 col-md-4 footer-collumn">
+                    <h3>Informações</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="secondary-color">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Política de Enetregas</a></li>
+                        <li class="mb-2"><a href="#" class="secondary-color">Rastreio de pedido</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="newsletter-container">
+            <div class="col-12">
+                <div class="row">
+                    <p class="light-color">Se inscreva para receber promoções no E-mail:</p>
+                    <form class="d-flex" id="news-form">
+                        <i class="bi bi-envelope primary-color"></i>
+                        <input type="email" class="form-control me-2" placeholder="Insira o seu E-mail"/>
+                        <button class="btn primary-bg-color" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12" id="social-container">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </div>
+        <div class="container" id="copy-container">
+            <p>Todos os Direitos reservados @2022 <span class="primary-color">Robert Henrique</span> - Seu sistema adequado.</p>
+        </div>
+        <div class="container text-light justify-content-center align-items-center">
+            <a class="text-light justify-content-center align-items-center aligm-self-center" href="https://www.flaticon.com/br/icones-gratis/torre-de-computador" title="torre de computador ícones">Torre de computador ícones criados por Ahmad Zalat - Flaticon</a>
+        </div>
+    </footer>
+
+</body>
+</html>
