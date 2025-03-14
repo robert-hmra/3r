@@ -1,15 +1,13 @@
 *{
     font-family: 'Montserrat', sans-serif !important;
 }
-
 body{
-    background-image: linear-gradient(to bottom, rgb(6, 10, 20), rgb(24, 29, 34));
-    background-color: #161a1e !important;
-    color: #FFF !important;
+    background-color: rgb(237, 237, 237) !important;
+    color: rgb(255, 255, 255) !important;
     min-width: 100%;
     max-width: 100%;
+    overflow-x: hidden;
 }
-
 .primary-bg-color{
     background-color: rgb(237, 237, 237) !important;
 }
@@ -33,22 +31,29 @@ body{
     color: #626262 !important;
 }
 .light-color{
-    color: #fcf5eb !important;
+    color: #e2e2e2 !important;
 }
-li, li:hover{
+.black-text{
+    color: rgb(16, 16, 16) !important;
+}
+
+.card{
+    background-color: rgb(255, 255, 255) !important;
+}
+li,a, li:hover, a:hover{
     background-color: transparent !important;
     margin-left: 0 !important;
 }
-  
-  
+
 /*NAVBAR*/
 #navbar{
     line-height: 60px !important;
     max-width: max-content;
     min-width: 100dvw;
-    background-color: rgba(10, 10, 10, 0.732);
+    background-color: rgb(0, 0, 0);
     backdrop-filter: blur( 20px );
-    box-shadow: 1px 1px 4px rgb(255, 59, 15);
+    border-bottom: 2px solid  rgb(255, 59, 15);
+    z-index: 10 !important;
 }
 #navbar .navbar-nav{
     flex-direction: row;
@@ -58,27 +63,25 @@ li, li:hover{
     margin-left: 1rem;
 }
 #navbar a,
-#navbar button, 
-#best-sellers a{
-    color: #9da9b1 !important;
+#navbar button{
+    color: #dedede !important;
     font-size: 16px;
     font-weight: 400 !important;
     background-color: transparent;
 }
-#navbar li a:hover,#best-sellers a:hover{
+#navbar li a:hover, li a:active{
     color: rgb(255, 255, 255) !important;
-    text-shadow: 1px 1px 55px rgb(0, 0, 0);
     text-transform: none;
     text-decoration: none;
 }
 #navbar .logo img{
     height: 85px;
+    padding-left: 20px;
 }
 
-#navbar button:focus,ul li a:hover i{
+#navbar button:focus, #produto-destaque button,ul li a:hover i{
     transition: 0.1s;
     color: rgb(252, 83, 83) !important;
-    text-shadow: 1px 1px 20px rgb(205, 187, 187);
 }
 
                                                                                                                                                         
@@ -89,6 +92,9 @@ li, li:hover{
     .nav-item, .nav-link a, #best-sellers a{
         padding-left: 0 !important;
         margin: 0  !important;
+    }
+    #produto-destaque{
+        padding-bottom: 160px !important;
     }
 }
 
@@ -194,6 +200,12 @@ li, li:hover{
         max-height: 200px;
 
     }
+    .dropdown-submenu:first{
+        transform: none !important;
+    }
+    .dropdown-submenu a{
+        left: 0 !important;
+    }
 
 }
 
@@ -262,7 +274,7 @@ li, li:hover{
     background-color: transparent;
 }
 
-/* BAnNNERS*/
+/* BANNERS*/
 #banners-container{
     padding: 0 ;
 }
@@ -271,19 +283,21 @@ li, li:hover{
     padding: 5em;
     left: 0px !important;
     right: 0px !important;
-    background-color: #ffffffa4 !important;
-    backdrop-filter: blur(40px);
+    background-color: #454545a4 !important;
+    backdrop-filter: blur(20px);
 }
 .carousel-caption h5{
-    color: rgb(224, 46, 46) !important;
     font-size: 1.8em ;
 }
 #slider{
-    margin-top: 90px;
-    position: relative;;
+    border-color: transparent !important;
+    position: relative;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none;
 }
 #slider img{
-    width: 100%;
+    min-width: 100%;
     height: 100%;
 }
 #slider .img-banner-1{
@@ -292,12 +306,14 @@ li, li:hover{
     background-position: top;
     background-repeat: no-repeat;
 
+
 }
 #slider .img-banner-2{
     background-image: url(../imagens/banner/banner\ 7.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+
 
 }
 #slider .img-banner-3{
@@ -306,10 +322,11 @@ li, li:hover{
     background-position: top;
     background-repeat: no-repeat;
 
+
 }
 @media (min-width: 768px) {
     #slider .carousel-item{
-        height: 80vh;
+        height: 85vh;
         max-height: 750px;
         width: 100%;
         background-size: contain;
@@ -327,7 +344,8 @@ li, li:hover{
 /* MINI BANNER */
 #mini-banners{
     margin-top: -2em;
-    z-index: 10;
+    z-index: 0;
+
 }
 #mini-banners .col-12{
     z-index: 1;
@@ -386,7 +404,9 @@ li, li:hover{
 /* BEST SELLERS */ 
 #best-sellers{
     padding: 4em 0;
-
+}
+#best-sellers i:hover{
+    color: red !important;
 }
 #best-sellers .row{
     margin: 0;
@@ -432,14 +452,29 @@ li, li:hover{
     font-weight: bold;
 }
 .btn{
-    background-color: transparent !important;
-    border-color: rgb(176, 176, 176) !important;
-    color: rgb(176, 176, 176) !important;
+    background-color: rgb(59, 123, 61)!important;
+    border-color: rgb(60, 132, 15) !important;
+    color: rgb(210, 210, 210) !important;
 }
 .btn:hover{
-    background-color:  rgb(197, 37, 37) !important;
-    color: rgb(236, 236, 236) !important;
-    border-color: rgb(197, 37, 37) !important;
+    background-color:  rgb(32, 143, 5) !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: rgba(58, 58, 58, 0) !important;
+}
+#produto-destaque ul{
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+#produto-destaque i{
+    position:absolute;
+    left: 0;
+}
+#produto-destaque li:first-child{
+    margin-top: 40px;
+}
+#produto-destaque li{
+    margin-top: 10px;
 }
 
 #produto-destaque{
@@ -447,8 +482,7 @@ li, li:hover{
      margin-bottom: 100px;
      margin: auto !important;
      align-items: center !; 
-     justify-content: center; 
-     text-align: center;
+     justify-content: center;
 }
 
 /* BOTTOM BANNER */
@@ -476,7 +510,18 @@ li, li:hover{
         font-size: 6em;
     }
 }
+.card{
+    border-radius: 0px !important;
+}
+/* PRODUTO DESTAQUE*/
 
+#produto-destaque{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0),  rgb(54, 1, 87) );
+    
+}
+#produto-destaque h2{
+    color: rgb(229, 229, 229);
+}
 /*new products*/
 #new-products{
     margin-bottom: 5em;
@@ -505,6 +550,16 @@ li, li:hover{
     margin: 2em auto;
 }
 
+/* MAPA */
+#mapa{
+    text-align: center !important;
+    padding: 100px;
+    background-color: #323232;
+}
+iframe{
+    border-radius: 20px;
+}
+
 /* GALLERY */
 #gallery .image-container{
     margin-top: 90px;
@@ -514,28 +569,28 @@ li, li:hover{
     height: 225px;
     cursor: pointer;
     transition: 0.3s;
-    border: 3px solid #101010;
+    border: 3px solid #737373;
 }
 #gallery .image-container:hover {
     border-color: #ff2323;
 }
 #insta1{
-    background-image: url(../imagens/produtos/fones/fone\ 3.webp),linear-gradient(to top, rgb(6, 10, 20), rgb(24, 29, 34));
+    background-image: url(../imagens/produtos/fones/fone\ 3.webp);
 }
 #insta2{
-    background-image: url(../imagens/produtos/fones/fone\ 1.png),linear-gradient(to top, rgb(6, 10, 20), rgb(24, 29, 34));
+    background-image: url(../imagens/produtos/fones/fone\ 1.png);
 }
 #insta3{
-    background-image: url(../imagens/produtos/mouse/mouse\ 4.webp),linear-gradient(to top, rgb(6, 10, 20), rgb(24, 29, 34));
+    background-image: url(../imagens/produtos/mouse/mouse\ 4.webp);
 }
 #insta4{
-    background-image: url(../imagens/produtos/teclado/teclado\ 1.png),linear-gradient(to top, rgb(6, 10, 20), rgb(24, 29, 34));
+    background-image: url(../imagens/produtos/teclado/teclado\ 1.png);
 }
 #insta5{
-    background-image: url(../imagens/produtos/teclado/teclado\ 4.webp),linear-gradient(to top, rgb(6, 10, 20), rgb(24, 29, 34));
+    background-image: url(../imagens/produtos/teclado/teclado\ 4.webp);
 }
 #insta6{
-    background-image: url(../imagens/produtos/mouse/mouse\ 3.avif),linear-gradient(to top, rgb(6, 10, 20), rgb(24, 29, 34));
+    background-image: url(../imagens/produtos/mouse/mouse\ 3.avif);
 }
 
 /* FOOTER*/ 
@@ -573,9 +628,6 @@ li, li:hover{
 #footer-links-container a{
     text-decoration: none;
 }
-#footerlinks-container a:hover{
-    color: #c09578;
-}
 #footer-center{
     border-left: 1px solid #626262;
     border-right: 1px solid #626262;
@@ -586,11 +638,11 @@ li, li:hover{
 
 #footer-center .store-phone{
     font-weight: 700;
+    color: red;
 }
 
 #newsletter-container {
     background-color: #101010;
-    border-bottom: 1px solid #ff0000;
     text-align: center;
     padding: 20px;
 }
@@ -616,11 +668,11 @@ li, li:hover{
     cursor: pointer;
     font-size: 1.5em;
     margin: 10px;
-    color: #626262;
+    color: #888888;
     transition: .3s;
 }
 #social-container i:hover{
-    color: #00ddff;
+    color: #ff5a5a;
 }
 
 #copy-container{
