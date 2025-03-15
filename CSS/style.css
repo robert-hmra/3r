@@ -40,6 +40,7 @@ body{
 .card{
     background-color: rgb(255, 255, 255) !important;
     padding: 0;
+    border-radius: 0px !important;
 }
 li,a, li:hover, a:hover{
     background-color: transparent !important;
@@ -166,20 +167,6 @@ li,a, li:hover, a:hover{
         margin-top: 1px !important;
         position: absolute;
     }
-    /* MAIS VENDIDOS */
-    #best-sellers .card{
-        background-size: contain !important;
-        background-repeat: no-repeat !important;
-        background-position: center !important;
-    }
-    
-    #best-sellers .card-img-top {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 80px !important;
-        width: auto !important;
-    }
 
     #produto-destaque{
         padding-top: 160px;
@@ -192,20 +179,6 @@ li,a, li:hover, a:hover{
     }
 
     /* NEW-PRODUCTS */
-    #new-products .card{
-        background-size: contain !important;
-        background-repeat: no-repeat !important;
-        background-position: center !important;
-    }
-    
-    #new-products .card-img-top {
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 80px !important;
-        width:  80px !important;
-
-    }
     .dropdown-submenu:first{
         transform: none !important;
     }
@@ -462,10 +435,6 @@ li,a, li:hover, a:hover{
     text-align: center;
     border-radius: 0;
 }
-#best-sellers .card img{
-    width: 140px;
-    margin: 2em auto;
-}
 .card .card-category{
     font-size: 0.8em;
 }
@@ -532,9 +501,6 @@ li,a, li:hover, a:hover{
         font-size: 6em;
     }
 }
-.card{
-    border-radius: 0px !important;
-}
 /* PRODUTO DESTAQUE*/
 
 #produto-destaque{
@@ -566,10 +532,10 @@ li,a, li:hover, a:hover{
 #new-products .col-md-4{
     padding: 0;
 }
-#new-products .card img{
-    height: 150px;
-    width: 90px;
-    margin: 2em auto;
+.card img{
+    height: 150px !important;
+    width: auto !important;
+    margin: 0 auto;
 }
 
 /* MAPA */
@@ -712,11 +678,25 @@ iframe{
     text-align: center;
     padding: 30px;
 }
+.card-body .card-category{
+    top: 0 !important;
+    width: 100%;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .card-body{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    flex-direction: column;
+    position: relative;
+}
+.card-body h5{
+    top: 0 !important;
+    height: 70px;
+}
+.card-body{
     text-align: center;
-
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
