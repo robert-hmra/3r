@@ -1,631 +1,866 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>3R - Informatica</title>
 
     <!-- CSS LOCAL -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
     <!-- JS LOCAL -->
-     <script defer src="js/index.js"></script>
+    <script defer src="js/index.js"></script>
     <!-- Font Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- BOOTSTRAP CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <!-- BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <!-- BOOTSTRAP ICONS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
     <!-- ICONE DE GUIA DO NAVEGADOR -->
-    <link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="imagens/favicon.ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="imagens/favicon.ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="imagens/favicon.ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="imagens/favicon.ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="imagens/favicon.ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="imagens/favicon.ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="imagens/favicon.ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="imagens/favicon.ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon.ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="imagens/favicon.ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="imagens/favicon.ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon.ico/favicon-16x16.png">
-    <link rel="manifest" href="imagens/favicon.ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
-<body>
-    
+    <link
+      rel="shortcut icon"
+      href="imagens/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="imagens/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="imagens/favicon.ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="imagens/favicon.ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="imagens/favicon.ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="imagens/favicon.ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="imagens/favicon.ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="imagens/favicon.ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="imagens/favicon.ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="imagens/favicon.ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="imagens/favicon.ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="imagens/favicon.ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imagens/favicon.ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="imagens/favicon.ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imagens/favicon.ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="imagens/favicon.ico/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
     <!-- BOTTOM NAVBAR -->
-    <nav id="navbar" class="navbar navbar-expand-lg m-0 p-0" id="bottom-navbar-container">
+    <nav
+    id="navbar"
+    class="navbar navbar-expand-lg m-0 p-0"
+    id="bottom-navbar-container"
+    >
         <div class="container-fluid navbar-item p-0" id="navbarNavAltMarkup">
-            <button type="button" class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-            </button> 
-            
-            <ul class="navbar-nav ul-logo m-0 p-0 collapse navbar-collapse" id="bottom-navbar">
-                <li class="nav-item float-left ">
-                    <a href="#" class="navbar-brand p-0 m-0 img-fluid logo">
-                      <img src="imagens/logo/logo-removebg-preview.png" alt="">
-                    </a>
-                </li>
-            </ul>
-            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
-                
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        <i class="bi bi-house-door danger-color"></i> Home</a>
+        <button
+            type="button"
+            class="navbar-toggler border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#bottom-navbar"
+            aria-controls="bottom-navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <i class="bi bi-list"></i>
+        </button>
 
+        <ul
+            class="navbar-nav ul-logo m-0 p-0 collapse navbar-collapse"
+            id="bottom-navbar"
+        >
+            <li class="nav-item float-left">
+            <a href="../index.html" class="navbar-brand p-0 m-0 img-fluid logo">
+                <img src="../imagens/logo/logo-removebg-preview.png" alt="" />
+            </a>
+            </li>
+        </ul>
+        <ul
+            class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse"
+            id="bottom-navbar"
+        >
+            <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+                <i class="bi bi-house-door danger-color"></i> Home</a
+            >
+            </li>
+            <!-- SUBMENU perifericos -->
+            <li class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle"
+                    href=""
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                <i class="bi bi-pc-display"></i> Perifericos:</a
+            >
+            <ul class="dropdown-menu border-danger">
+                <li class="m-0">
+                <a
+                    href="../pages/monitores.html"
+                    class="dropdown-item light-color"
+                    ><i class="bi bi-display"></i> Monitor</a
+                >
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-basket2 danger-color"></i> comprar
-                    </a>
-                    <ul class="dropdown-menu border-danger">
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">
-                                <i class="bi bi-box-seam danger-color"></i> Produtos
-                            </a>
-                            <ul class="dropdown-menu border-danger">
-                    
-                                <!-- Submenu Computador -->
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle light-color" href="#">
-                                        <i class="bi bi-pc-display"></i> Computador
-                                    </a>
-                                    <ul class="dropdown-menu border-danger">
-                                        <li class="m-0"><a href="pages/computer.html" class="dropdown-item light-color"><i class="bi bi-pc-display"></i> PC completo</a></li>
-                                        
-                                        
-                                        
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Placa Mãe</a>
-                                            
-                                    <ul class="dropdown-menu border-danger">
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Capinha</a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Carregador</a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Fones</a></li>
-                                        
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Suporte</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> lightning</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
-                                    </ul>
-                                        </li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Memória RAM</a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Processador</a></li>
-                                        
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Placa de Vídeo</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> Fontes</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> Gabinetes</a></li>
-                                    </ul>
-                                </li>
-                    
-                                
-                                
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle light-color" href="">
-                                        <i class="bi bi-phone"></i> Celular
-                                    </a>
-                                    <ul class="dropdown-menu border-danger">
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Capinha</a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Carregador</a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Fones</a></li>
-                                        
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Suporte</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> lightning</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
-                                    </ul>
-                                </li>
-                                
-                                
-                                
-                                <li class="dropdown-submenu m-0">
-                                    <a href="#" class="dropdown-item dropdown-toggle light-color" >
-                                        <i class="bi bi-pc-display"></i> Perifericos:</a>
-                                    <ul class="dropdown-menu border-danger">
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-display"></i> Monitor</a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Mouse </a></li>
-                                        
-                                        <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Teclado</a></li>
-                                        
-                                        <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Mouse Pad</a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> Caixa de som </a></li>
-                                        
-                                        <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
-                                    </ul>
-                                </li>
-                    
-                            </ul>
-                        </li>
-                        
-                        
-                        <li>
-                            <a href="#produto-destaque" class="dropdown-item"><i class="bi bi-stars danger-color"></i> Destaque</a>
-                        </li>
-                            
-                        
-                        <li>
-                            <a href="#new-products" class="dropdown-item"><i class="bi bi-arrow-through-heart danger-color"></i> Promoções</a>
-                        </li>
-                    </ul>
+
+                <li class="m-0">
+                <a
+                    href="../pages/mouses.html"
+                    class="dropdown-item light-color"
+                    ><i class="bi bi-mouse2"></i> Mouse
+                </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-person-gear"></i> Nossos serviços
-                    </a>
-                    <ul class="dropdown-menu border-danger">
-                        <li>
-                            <a href="#best-sellers" class="dropdown-item"><i class="bi bi-pc-display danger-color"></i> Problema com computador?</a>
-                        </li>
-                        
-                        
-                        <li>
-                            <a href="#produto-destaque" class="dropdown-item"><i class="bi bi-phone danger-color"></i> Problema com celular?</a>
-                        </li>
-                            
-                        
-                        <li>
-                            <a href="#new-products" class="dropdown-item"><i class="bi bi-whatsapp danger-color"></i> Orçamento online:
-                            </a>
-                        </li>
-                    </ul>
+
+                <li class="m-0">
+                <a
+                    href="../pages/teclados.html"
+                    class="dropdown-item light-color"
+                    ><i class="bi bi-keyboard"></i> Teclado</a
+                >
                 </li>
-                <li class="nav-item">
-                    <a href="#gallery" target="_blank" class="nav-link"><i class="bi bi-images danger-color"></i> galeria de fotos</a>
+
+                <li class="m-0">
+                <a href="../pages/fones.html" class="dropdown-item light-color"
+                    ><i class="bi bi-headset"></i> Fones</a
+                >
                 </li>
-                
             </ul>
+            <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <i class="bi bi-basket2 danger-color"></i> comprar
+            </a>
+            <ul class="dropdown-menu border-danger">
+                <!-- Submenu Computador -->
+                <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle light-color" href="">
+                    <i class="bi bi-pc-display"></i> Computador
+                </a>
+                <ul class="dropdown-menu border-danger">
+                    <li class="m-0">
+                    <a
+                        href="../pages/computer.html"
+                        class="dropdown-item light-color"
+                        ><i class="bi bi-pc-display"></i> PC completo</a
+                    >
+                    </li>
+
+                    <li class="m-0">
+                    <a href="../pages/computer.html" class="dropdown-item light-color"
+                        ><i class="bi bi-motherboard"></i> Placa Mãe</a
+                    >
+                    </li>
+
+                    <li class="m-0">
+                    <a
+                        href="../pages/computer.html"
+                        class="dropdown-item light-color"
+                        ><i class="bi bi-memory"></i> Memória RAM</a
+                    >
+                    </li>
+
+                    <li class="m-0">
+                    <a
+                        href="../pages/computer.html"
+                        class="dropdown-item light-color"
+                        ><i class="bi bi-cpu"></i> Processador</a
+                    >
+                    </li>
+
+                    <li class="m-0">
+                    <a href="../pages/computer.html" class="dropdown-item light-color"
+                        ><i class="bi bi-pci-card"></i> Placa de Vídeo</a
+                    >
+                    </li>
+
+                    <li class="m-0">
+                    <a href="../pages/computer.html" class="dropdown-item light-color"
+                        ><i class="bi bi-battery-charging"></i> Fontes</a
+                    >
+                    </li>
+
+                    <li class="m-0">
+                    <a href="../pages/computer.html" class="dropdown-item light-color"
+                        ><i class="bi bi-pc"></i> Gabinetes</a
+                    >
+                    </li>
+                </ul>
+                </li>
+                </li>
+
+                <li>
+                <a href="../index.html/#produto-destaque" class="dropdown-item"
+                    ><i class="bi bi-stars danger-color"></i> Destaque</a
+                >
+                </li>
+
+                <li>
+                <a href="../index.html/#new-products" class="dropdown-item"
+                    ><i class="bi bi-arrow-through-heart danger-color"></i>
+                    Promoções</a
+                >
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <i class="bi bi-person-gear"></i> Nossos serviços
+            </a>
+            <ul class="dropdown-menu border-danger">
+                <li>
+                <a href="../servicos/servico-pc.html" class="dropdown-item"
+                    ><i class="bi bi-pc-display danger-color"></i> Problema com
+                    computador?</a
+                >
+                </li>
+
+                <li>
+                <a href="../servicos/servico-cell.html" class="dropdown-item"
+                    ><i class="bi bi-phone danger-color"></i> Problema com
+                    celular?</a
+                >
+                </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a href="../index.html#gallery" target="_blank" class="nav-link"> Resultados</a>
+            </li>
+        </ul>
         </div>
     </nav>
 
     <!-- BANNER -->
     <div class="container slide" id="banners-container">
-        
-       <div class="carousel slide" id="slider" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block img-banner-1">
-                    <div class="carousel-caption text-light">
-                        <h5 class="text-light">Tecnicos Especializados</h5>
-                        <p>Confie seu produto para técnicos Especializados.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block img-banner-2">
-                    <div class="carousel-caption text-light">
-                        <h5 class="text-light">Visita Técnica</h5>
-                        <p>Entre em contato conosco e realize orçamento para visita técnica em sua empresa ou residencia</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block img-banner-3">
-                    <div class="carousel-caption text-light">
-                        <h5 class="text-light">Diversos Serviços</h5>
-                        <p>Conheça nossa forma de serviço e valores, com os melhores preços e confiança para você.</p>
-                    </div>
-                </div>
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block img-banner-1" />
+            <div class="carousel-caption text-light">
+              <h5 class="text-light">Tecnicos Especializados</h5>
+              <p>Confie seu produto para técnicos Especializados.</p>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">next</span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-banner-2" />
+            <div class="carousel-caption text-light">
+              <h5 class="text-light">Visita Técnica</h5>
+              <p>
+                Entre em contato conosco e realize orçamento para visita técnica
+                em sua empresa ou residencia
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-banner-3" />
+            <div class="carousel-caption text-light">
+              <h5 class="text-light">Diversos Serviços</h5>
+              <p>
+                Conheça nossa forma de serviço e valores, com os melhores preços
+                e confiança para você.
+              </p>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">next</span>
+        </button>
+      </div>
 
-        <!-- MINI BANNERS-->
-        <div class="container" id="mini-banners">
-            <div class="row justify-content-around ">
-                <div class="col-12  bg-secondary text-dark" id="mini-banner-1">
-                    <h2 class=" text-light">MONITOR LED VX190G 19p</h2>
-                    <img src="imagens/produtos/monitor/MONITOR LED VX190G 19p 1440X900 HDMI:VGA:VESA - VX PRO/monitor_led_vx190z_19p_1440x900_hdmi_vga_vesa_vx_pro_37145_2_7948c4126957e97d01876dab4e9963c7.png" class="w-50 h-50"  alt="Monitor LED">
-                    <a href="https://wa.me/61994107771" target="_blank" class="text-light">Compre Agora</a>
-                </div>
-                <div class="col-12 bg-danger" id="mini-banner-2">
-                    <h2 class="secondary-light">Mouse Gamer AlienWare</h2>
-                    <img src="imagens/produtos/mouse/mouse 7.avif" class="h-50 w-50" alt="Relogio 2">
-                    <a href="https://wa.me/61994107771" target="_blank" class="text-light">Compre Agora</a>
-                </div>
-                <div class="col-12 bg-light text-light" id="mini-banner-3">
-                    <h2 class="secondary-color">Teclado mecanico Redragon</h2>
-                    <img src="imagens/produtos/teclado/teclado 3.jpg " class="h-50 w-50"  alt="Relogio 3">
-                    <a href="https://wa.me/61994107771" target="_blank" class="">Compre Agora</a>
-                </div>
-            </div>
+      <!-- MINI BANNERS-->
+      <div class="container" id="mini-banners">
+        <div class="row justify-content-around">
+          <div class="col-12 bg-secondary text-dark" id="mini-banner-1">
+            <h2 class="text-light">MONITOR LED 19p vxpro</h2>
+            <img
+              src="imagens/produtos/monitor/MONITOR LED VX190G 19p 1440X900 HDMI:VGA:VESA - VX PRO/monitor_led_vx190z_19p_1440x900_hdmi_vga_vesa_vx_pro_37145_2_7948c4126957e97d01876dab4e9963c7.png"
+              class="w-50 h-50"
+              alt="Monitor LED"
+            />
+            <a
+              href="https://wa.me/61994107771"
+              target="_blank"
+              class="text-light"
+              >Compre Agora</a
+            >
+          </div>
+          <div class="col-12 bg-danger" id="mini-banner-2">
+            <h2 class="secondary-light">Mouse Gamer 16000DPI logitech</h2>
+            <img
+              src="imagens/produtos/mouse/gamer/Mouse Gamer G403 HERO 16K RGB Lightsync 16000 DPI 910-005631 - Logitech/17822_1_20161217162557.png"
+              class="h-50 w-50"
+              alt="mouse_gamer_devourer_m993_rgb_preto_redragon_42223_1_25b9dee21ab90d95e7884ba31a89457b.webp"
+            />
+            <a
+              href="https://wa.me/61994107771"
+              target="_blank"
+              class="text-light"
+              >Compre Agora</a
+            >
+          </div>
+          <div class="col-12 bg-light text-light" id="mini-banner-3">
+            <h2 class="secondary-color">Teclado mecanico Redragon</h2>
+            <img
+              src="imagens/produtos/teclado/gamer/TECLADO GAMER MECÂNICO DRACONIC PRO RGB PRETO SWITCH MARRON ABNT2 K530RGB-PRO (PT-BROWN) - REDRAGON/_pt_brown_redragon_36893_1_d52def26d8ce424a83631219423c6fc3.png"
+              class="h-50 w-50"
+              alt="Relogio 3"
+            />
+            <a href="https://wa.me/61994107771" target="_blank" class=""
+              >Compre Agora</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!--BEST SELLER-->
     <div class="container" id="best-sellers">
-        <h2 class="tittle text-danger">Mais vendidos</h2>
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle black-text" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="bi bi-basket2 black-text"></i> Produtos
-                </a>
-                <ul class="dropdown-menu border-danger">
-                    
-                    <!-- Submenu Computador -->
-                    <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle light-color" href="#">
-                            <i class="bi bi-pc-display"></i> Computador
-                        </a>
-                        <ul class="dropdown-menu border-danger">
-                            <li class="m-0"><a href="pages/computer.html" class="dropdown-item light-color"><i class="bi bi-pc-display"></i> PC completo</a></li>
-                            
-                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Placa Mãe</a></li>
-                            
-                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Memória RAM</a></li>
-                            
-                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Processador</a></li>
-                            
-                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Placa de Vídeo</a></li>
-                            
-                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> Fontes</a></li>
-                            
-                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> Gabinetes</a></li>
-                        </ul>
-                    </li>
-        
-                    
-                    <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle light-color" href="">
-                            <i class="bi bi-phone"></i> Celular
-                        </a>
-                        <ul class="dropdown-menu border-danger">
-                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-motherboard"></i> Capinha</a></li>
-                            
-                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-memory"></i> Carregador</a></li>
-                            
-                            <li class="m-0"><a href="#produto-destaque" class="dropdown-item light-color"><i class="bi bi-cpu"></i> Fones</a></li>
-                            
-                            <li class="m-0"><a href="#best-sellers" class="dropdown-item light-color"><i class="bi bi-pci-card"></i> Suporte</a></li>
-                            
-                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-battery-charging"></i> lightning</a></li>
-                            
-                            <li class="m-0"><a href="#new-products" class="dropdown-item light-color"><i class="bi bi-pc"></i> </a></li>
-                        </ul>
-                    </li>
-        
-                </ul>
-            </li>
-            
+      <h2 class="tittle text-danger">Produtos Mais vendidos</h2>
+      <!-- MOUSE: -->
+      <div class="row card-group gy-4" id="mouses">
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/mouse/gamer/Mouse Gamer 3200dpi Com Fio Usb Rgb Ergonômico Eg113 - Evolut/mouse_gamer_3200dpi_com_fio_usb_rgb_ergonomico_eg113_evolut_42605_1_e0898596087bebdc3d47f96f8e769e4e.webp"
+              alt="Mouse"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">mouse gamer 3200dpi com fio usb rgb ergonomico eg113 evolut</p>
+              <h5 class="card-title">Mouse Gamer 3200dpi Com Fio Usb Rgb - EVOLUT</h5>
+              <p class="card-text text-success">R$ 80,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/mouse/gamer/Mouse Gamer Devourer M993 RGB Preto - Redragon/mouse_gamer_devourer_m993_rgb_preto_redragon_42223_1_25b9dee21ab90d95e7884ba31a89457b.webp"
+              alt=""
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">Mouse Gamer Devourer M993 RGB preto redragon</p>
+              <h5 class="card-title">Mouse Gamer Devourer M993 RGB Redragon</h5>
+              <p class="card-text text-success">R$ 420,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/mouse/gamer/Mouse Gamer G403 HERO 16K RGB Lightsync 16000 DPI 910-005631 - Logitech/17822_1_20161217162557.png"
+              alt=""
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">Mouse Gamer G403 HERO 16K RGB Lightsync 16000 DPI 910-005631 - Logitech</p>
+              <h5 class="card-title">Mouse Gamer HERO 16K RGB 16000 DPI - Logitech</h5>
+              <p class="card-text text-success">R$ 460,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/mouse/gamer/Mouse Gamer MG301 16000DPI 6 Botoes Preto JM03NAE07 - Thunderobot/mouse_gamer_mg301_16000dpi_6_botoes_preto_jm03nae07_thunderobot_42459_1_2b83dd8888a2a7946cd13dc086b5eaf2.webp"
+              alt=""
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">Mouse Gamer MG301 16000DPI 6 Botoes Preto JM03NAE07</p>
+              <h5 class="card-title">Mouse Gamer MG301 16000DPI 6 Botoes Preto - Thunderobot</h5>
+              <p class="card-text text-success">R$ 300,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+      </div>
+      <!-- TECLADOS:-->
+      <div class="row card-group gy-4" id="teclados">
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/teclado/comum/Teclado Office Easy USB 2.0 Padrão Preto 60000153 - Maxprint/teclado_office_easy_usb_2_0_padrao_preto_60000153_maxprint_43215_1_05efa9fd91d4216ca41f5fe4aacb75c5.webp"
+              alt="teclado_office_easy_usb_2_0_padrao_preto_60000153_maxprint"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">Teclado Office Easy USB 2.0 Padrão Preto 60000153 - Maxprint</p>
+              <h5 class="card-title">Teclado Office Easy USB 2.0 Padrão - Maxprint</h5>
+              <p class="card-text text-success">R$ 60,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/teclado/gamer/Teclado Mecânico Gamer Gloria RGB Switch Dust-Proof Red ABNT2 Branco e Laranja K664WOG-RGB (PT-RED) - Redragon/teclado_mecanico_gamer_gloria_rgb_switch_dust_proof_red_abnt2_branco_e_laranja_k664wog_rgb_pt_red_re_42919_1_0f20b220f61a50eee0d37afd0b89cb4f.webp"
+              alt="teclado_mecanico_gamer_gloria_rgb_switch_dust_proof_red_abnt2_branco_e_laranja"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">Teclado Mecânico Gamer Gloria RGB Switch Dust-Proof Red ABNT2 Branco e Laranja K664WOG-RGB (PT-RED)</p>
+              <h5 class="card-title">Teclado Mecânico Gamer Gloria RGB Switch Red ABNT2 (PT-RED)</h5>
+              <p class="card-text text-success">R$ 530,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src="imagens/produtos/teclado/gamer/TECLADO GAMER MECÂNICO DRACONIC PRO RGB PRETO SWITCH MARRON ABNT2 K530RGB-PRO (PT-BROWN) - REDRAGON/_pt_brown_redragon_36893_1_d52def26d8ce424a83631219423c6fc3.png"
+              alt="teclado_gamer_mecanico_draconic_pro_rgb_preto_switch_marron_abnt2_k530rgb_pro_pt_brown_redragon"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">TECLADO GAMER MECÂNICO DRACONIC PRO RGB PRETO SWITCH MARRON ABNT2 K530RGB-PRO (PT-BROWN) - REDRAGON</p>
+              <h5 class="card-title">TECLADO GAMER MECÂNICO - SWITCH MARRON ABNT2 - REDRAGON</h5>
+              <p class="card-text text-success">R$ 600,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+          <div class="card col-12 col-md-3 bg-secondary-1">
+            <img
+              src='../imagens/produtos/teclado/gamer/TECLADO GAMER TC-10W CANDY BRANCO - EVUS/teclado_gamer_tc_10w_candy_branco_evus_37253_1_e4718ab41a6df8595ac7f9c8acd0f262.webp'
+              alt="teclado_gamer_tc_10w_candy_branco_evus_37253_1_e4718ab41a6df8595ac7f9c8acd0f262.webp"
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body mt-4">
+              <p class="card-category secondary-color">
+                TECLADO GAMER TC-10W CANDY BRANCO - EVUS
+              </p>
+              <h5 class="card-title">TECLADO GAMER TC-10W CANDY BRANCO - EVUS</h5>
+              <p class="card-text text-success">R$ 550,00</p>
+              <a
+                href="https://wa.me/61994107771"
+                target="_blank"
+                class="btn btn-primary"
+                ><i class="bi bi-whatsapp"></i> Comprar</a
+              >
+            </div>
+          </div>
+      </div>
+      <!-- Monitores:-->
+      <div class="row card-group gy-4">
+            <div class="card col-12 col-md-3 bg-secondary-1">
+                <img src='../imagens/produtos/monitor/MONITOR LED VX190G 19p 1440X900 HDMI:VGA:VESA - VX PRO/mi_vga_vesa_vx_pro_37145_3_7e7434d969449820b6a4d0c82a5206e2.png' alt="" class="card-img-top img-fluid">
+                <div class="card-body mt-4">
+                    <p class="card-category secondary-color">HDMI:VGA:VESA - VX PRO/mi_vga_vesa_vx_pro_</p>
+                    <h5 class="card-title">MONITOR LED 19 HDMI/VGA 1440X900 5MS 60HZ VX190X - VXPRO</h5>
+                    <p class="card-text text-success">R$ 450,00</p>
+                    <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-3 bg-secondary-1 pt-3">
+                <img src='../imagens/produtos/monitor/Monitor 21,5" Led Widescreen Full HD HDMI:VGA 100hz 1ms 22B30HM2 Preto - AOC/monitor_21_5_led_widescreen_full_hd_hdmi_vga_100hz_1ms_22b30hm2_preto_aoc_43303_1_be7eec983bc96929d5920beab219dbe0 (1).webp' alt="" class="card-img-top img-fluid">
+                <div class="card-body mt-4">
+                    <p class="card-category secondary-color">Monitor AOC 21,5" led widescreen full hd hdmi/vga 100hz 1ms</p>
+                    <h5 class="card-title">Monitor AOC 21,5" Full HD Led 100hz</h5>
+                    <p class="card-text text-success">R$ 850,00</p>
+                    <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-3 bg-secondary-1">
+                <img src='../imagens/produtos/monitor/Monitor 23,8" Widescreen Led Full HD HDMI:VGA 24B30HM2 Preto - AOC/monitor_23_8_widescreen_led_full_hd_hdmi_vga_24b30hm2_preto_aoc_43305_1_baa9af05a424a06ff199af1fc3845473.webp' alt="" class="card-img-top img-fluid">
+                <div class="card-body mt-4">
+                    <p class="card-category secondary-color">Preto - AOC/monitor 23,8" widescreen led full hd hdmi/vga</p>
+                    <h5 class="card-title">Monitor AOC 23,8" Led Full HD 100hz</h5>
+                    <p class="card-text text-success">R$ 990,00</p>
+                    <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
+                </div>
+            </div>
+            <div class="card col-12 col-md-3 bg-secondary-1">
+                <img src='../imagens/produtos/monitor/MONITOR GAMER DX240ZG 24p IPS FHD 1MS 144HZ FREESYNC HDMI:DP - DUEX/monitor_gamer_dx240zg_24p_ips_fhd_1ms_144hz_freesync_hdmi_dp_duex_38249_1_dbc2a92429e29b6ff5d8cefb5471e2aa.webp' alt="" class="card-img-top img-fluid">
+                <div class="card-body mt-4">
+                    <p class="card-category secondary-color">MONITOR GAMER DUEX DX240ZG 24p IPS FHD 1MS 144HZ FREESYNC HDMI</p>
+                    <h5 class="card-title">MONITOR GAMER DUEX 24" IPS FHD 144HZ 1MS </h5>
+                    <p class="card-text text-success">R$ 1.500,00</p>
+                    <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+  <!-- BANNER DESTAQUE -->
+    <div class="container-fluid row p-4 m-4" id="produto-destaque">
+      <div
+        class="col-12 col-md-5 p-4 m-4 d-flex align-items-center justify-content-center flex-column"
+      >
+        <p class="primary-color offer-subtitle">Desconto de até 75%</p>
+        <h2 class="">Fone JBL Quantum 600</h2>
+        <ul class="">
+          <li>
+            <i class="bi bi-patch-check-fill"></i> Viva o jogo com o JBL
+            QuantumSURROUND™ e DTS
+          </li>
+          <li>
+            <i class="bi bi-patch-check-fill"></i> Sinta-se no centro do jogo
+            com o JBL QuantumSOUND Signature
+          </li>
+          <li>
+            <i class="bi bi-patch-check-fill"></i> Fone de ouvido sem fio com
+            2.4 GHz sem delay no áudio
+          </li>
         </ul>
-        <!-- MOUSE: -->
-        <div class="row gy-4">
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/mouse/mouse 1.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Monitor </p>
-                        <h5 class="card-title">Mouse Gamer logitech</h5>
-                        <p class="card-text text-success">R$ 77,99</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/mouse/mouse 2.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 2000 DPI</p>
-                        <h5 class="card-title">Mouse escritório - logitech</h5>
-                        <p class="card-text text-success">R$ 59,99</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/mouse/mouse 7.avif" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 40000 DPI</p>
-                        <h5 class="card-title">Gamer sem fio - Alienware</h5>
-                        <p class="card-text text-success">R$ 277,50</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/mouse/mouse 3.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 20000 DPI</p>
-                        <h5 class="card-title">Mouse Gamer - Redragon</h5>
-                        <p class="card-text text-success">R$ 177,65</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <!-- TECLADOS:-->
-        <div class="row gy-4">
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/teclado/teclado 1.png" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 12000 DPI</p>
-                        <h5 class="card-title">Mouse Gamer logitech</h5>
-                        <p class="card-text text-success">R$ 77,99</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/teclado/teclado 2.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 2000 DPI</p>
-                        <h5 class="card-title">Mouse escritório - logitech</h5>
-                        <p class="card-text text-success">R$ 59,99</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/teclado/teclado 3.jpg" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 40000 DPI</p>
-                        <h5 class="card-title">Gamer sem fio - Alienware</h5>
-                        <p class="card-text text-success">R$ 277,50</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/teclado/teclado 4.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 20000 DPI</p>
-                        <h5 class="card-title">Mouse Gamer - Redragon</h5>
-                        <p class="card-text text-success">R$ 177,65</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-        <!-- FONEs: -->
-        <div class="row gy-4">
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/fones/fone 1.png" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 12000 DPI</p>
-                        <h5 class="card-title">Mouse Gamer logitech</h5>
-                        <p class="card-text text-success">R$ 77,99</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/fones/fone 2.png" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 2000 DPI</p>
-                        <h5 class="card-title">Mouse escritório - logitech</h5>
-                        <p class="card-text text-success">R$ 59,99</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/fones/fone 3.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 40000 DPI</p>
-                        <h5 class="card-title">Gamer sem fio - Alienware</h5>
-                        <p class="card-text text-success">R$ 277,50</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card bg-secondary-1">
-                    <img src="imagens/produtos/fones/fone 4.webp" alt="" class="card-img-top img-fluid">
-                    <div class="card-body mt-4">
-                        <p class="card-category secondary-color">Mouse - 20000 DPI</p>
-                        <h5 class="card-title">Mouse Gamer - Redragon</h5>
-                        <p class="card-text text-success">R$ 177,65</p>
-                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </div>
-
-    <!-- BANNER DESTAQUE -->
-    <div class="container-fluid row p-4 m-4 " id="produto-destaque">
-        
-            <div class="col-12 col-md-5 p-4 m-4 d-flex align-items-center justify-content-center flex-column">
-                <p class="primary-color offer-subtitle">Desconto de até 75%</p>
-                <h2 class="">Fone JBL Quantum 600</h2>
-                <ul class="">
-                    <li>
-                        <i class="bi bi-patch-check-fill"></i> Viva o jogo com o JBL QuantumSURROUND™ e DTS
-                    </li>
-                    <li>
-                        <i class="bi bi-patch-check-fill"></i> Sinta-se no centro do jogo com o JBL QuantumSOUND    Signature
-                    </li>
-                    <li>
-                        <i class="bi bi-patch-check-fill"></i> Fone de ouvido sem fio com 2.4 GHz sem delay no áudio
-                    </li>
-                </ul>
-                <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary">Comprar Agora</a>
-            </div>
-            <div class="col-12 col-md-6 p-4 m-4 d-flex align-items-center justify-content-center flex-column">
-                <img src="imagens/destaque/fone destque.webp"  class="img-fluid h-100 w-100" alt="Relogio X">
-            </div>
-    </div>
-    <!-- Mais Vendidos -->
+        <a
+          href="https://wa.me/61994107771"
+          target="_blank"
+          class="btn btn-primary"
+          >Comprar Agora</a
+        >
+      </div>
+      <div
+        class="col-12 col-md-6 p-4 m-4 d-flex align-items-center justify-content-center flex-column"
+      >
+        <img
+          src="imagens/destaque/fone destque.webp"
+          class="img-fluid h-100 w-100"
+          alt="Relogio X"
+        />
+      </div>
+    </div>  <!-- Mais Vendidos -->
     <div class="container secondary-bg-color" id="new-products">
-        <h2 class="tittle primary-color">Novidades</h2>
-        <div class="row">
-            <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
-                <p class="secondary-color">Os melhores</p>
-                <h3>Produtos</h3>
-                <p class="primary-color">pelos melhores preços</p>         
-            </div>
-            <div class="col-12 col-md-9">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="card primary-bg-color">
-                            <img src="imagens/produtos/teclado/teclado 3.jpg" alt="" class="card-img-top w-50 h-50  img-fluid">
-                            <div class="card-body mt-4">
-                                <p class="card-category secondary-color">Teclado Mecânico</p>
-                                <h5 class="card-title">Teclado mecânio - Redragon switch red</h5>
-                                <p class="card-text text-success">R$ 279,99</p>
-                                <a href="https://wa.me/61994107771" target="_blank" class="btn  btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card primary-bg-color">
-                            <img src="imagens/produtos/teclado/teclado 4.webp" alt="" class="card-img-top w-50 h-50  img-fluid">
-                            <div class="card-body mt-4">
-                                <p class="card-category secondary-color">Teclado Mecânico</p>
-                                <h5 class="card-title">Teclado mecânio - Redragon switch Blue</h5>
-                                <p class="card-text text-success">R$ 399,99</p>
-                                <a href="https://wa.me/61994107771" target="_blank" class="btn  btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card primary-bg-color">
-                            <img src="imagens/produtos/mouse/mouse 7.avif" alt="" class="card-img-top w-50 h-50  img-fluid">
-                            <div class="card-body mt-4">
-                                <p class="card-category secondary-color">Mouse - 40000 DPI</p>
-                                <h5 class="card-title">Mouse Gamer - AlienWare</h5>
-                                <p class="card-text text-success">R$ 277,65</p>
-                                <a href="https://wa.me/61994107771" target="_blank" class="btn  btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div><div class="col-12 col-md-4">
-                        <div class="card primary-bg-color">
-                            <img src="imagens/produtos/fones/fone 1.png" alt="" class="card-img-top w-50 h-50 img-fluid">
-                            <div class="card-body mt-4">
-                                <p class="card-category secondary-color">Fone Gamer</p>
-                                <h5 class="card-title">Headset gamer </h5>
-                                <p class="card-text text-success">R$ 177,65</p>
-                                <a href="https://wa.me/61994107771" target="_blank" class="btn  btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div><div class="col-12 col-md-4">
-                        <div class="card primary-bg-color">
-                            <img src="imagens/produtos/fones/fone 2.png" alt="" class="card-img-top w-50 h-50 img-fluid">
-                            <div class="card-body mt-4">
-                                <p class="card-category secondary-color">Fone Gamer</p>
-                                <h5 class="card-title">Headset Gamer X</h5>
-                                <p class="card-text text-success">R$ 119,99</p>
-                                <a href="https://wa.me/61994107771" target="_blank" class="btn  btn-primary">Comprar</a>
-                            </div>
-                        </div>
-                    </div><div class="col-12 col-md-4">
-                        <div class="card primary-bg-color">
-                            <img src="imagens/produtos/fones/fone 3.webp" alt="" class="card-img-top w-50 h-50 img-fluid">
-                            <div class="card-body mt-4">
-                                <p class="card-category secondary-color">Foen</p>
-                                <h5 class="card-title">Fone JBL - Bluetooth</h5>
-                                <p class="card-text text-success">R$ 259,99</p>
-                                <a href="https://wa.me/61994107771" target="_blank" class="btn  btn-primary">Comprar</a>
-                            </div>
-                        </div>
+      <h2 class="tittle primary-color">Menores preços</h2>
+      <div class="row">
+        <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
+          <p class="secondary-color">Os melhores</p>
+          <h3>Produtos</h3>
+          <p class="primary-color">pelos melhores preços</p>
+        </div>
+        <div class="col-12 col-md-9">
+            <div class="row">    <div class="col-12 col-md-4">
+                <div class="card bg-secondary-1">
+                    <img src='../imagens/produtos/monitor/MONITOR LED VX190G 19p 1440X900 HDMI:VGA:VESA - VX PRO/mi_vga_vesa_vx_pro_37145_3_7e7434d969449820b6a4d0c82a5206e2.png' alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">HDMI:VGA:VESA - VX PRO/mi_vga_vesa_vx_pro_</p>
+                        <h5 class="card-title">MONITOR LED 19 HDMI/VGA 1440X900 5MS 60HZ VX190X - VXPRO</h5>
+                        <p class="card-text text-success">R$ 450,00</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
                     </div>
                 </div>
             </div>
+            <div class="col-12 col-md-4">
+                <div class="card bg-secondary-1 pt-3">
+                    <img src='../imagens/produtos/monitor/Monitor 21,5" Led Widescreen Full HD HDMI:VGA 100hz 1ms 22B30HM2 Preto - AOC/monitor_21_5_led_widescreen_full_hd_hdmi_vga_100hz_1ms_22b30hm2_preto_aoc_43303_1_be7eec983bc96929d5920beab219dbe0 (1).webp' alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Monitor AOC 21,5" led widescreen full hd hdmi/vga 100hz 1ms</p>
+                        <h5 class="card-title">Monitor AOC 21,5" Full HD Led 100hz</h5>
+                        <p class="card-text text-success">R$ 850,00</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card bg-secondary-1">
+                    <img src='../imagens/produtos/monitor/Monitor 23,8" Widescreen Led Full HD HDMI:VGA 24B30HM2 Preto - AOC/monitor_23_8_widescreen_led_full_hd_hdmi_vga_24b30hm2_preto_aoc_43305_1_baa9af05a424a06ff199af1fc3845473.webp' alt="" class="card-img-top img-fluid">
+                    <div class="card-body mt-4">
+                        <p class="card-category secondary-color">Preto - AOC/monitor 23,8" widescreen led full hd hdmi/vga</p>
+                        <h5 class="card-title">Monitor AOC 23,8" Led Full HD 100hz</h5>
+                        <p class="card-text text-success">R$ 990,00</p>
+                        <a href="https://wa.me/61994107771" target="_blank" class="btn btn-primary "><i class="bi bi-whatsapp"></i> Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" id="fones">
+              <div class="card primary-bg-color">
+                <img
+                  src="imagens/produtos/fones/GAMER/HEADSET DHE-8010 LED AZUL DRIVERS 50MM USB E P2 COM MICROFONE DOBRÁVEL PRETO E AZUL - HP/headset_dhe_8010_led_azul_drivers_50mm_usb_e_p2_com_microfone_dobravel_preto_e_azul_hp_39217_1_18a1d3fef90ef9666aaca1c72e22db5d.webp"
+                  alt="headset_dhe_8010_led_azul_drivers_50mm_usb_e_p2_com_microfone_dobravel_preto_e_azul_hp"
+                  class="card-img-top w-50 h-50 img-fluid"
+                />
+                <div class="card-body mt-4">
+                  <p class="card-category secondary-color">HEADSET DHE-8010 LED AZUL DRIVERS 50MM USB E P2 COM MICROFONE DOBRÁVEL PRETO E AZUL - HP</p>
+                  <h5 class="card-title">HEADSET DRIVERS 50MM USB E P2 COM MICROFONE DOBRÁVEL - HP</h5>
+                  <p class="card-text text-success">R$ 250,00</p>
+                  <a
+                    href="https://wa.me/61994107771"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img
+                  src="imagens/produtos/fones/GAMER/HEADSET GAMER CADMUS RGB SOM SURROUND 7.1 DRIVERS 53MM PRETO H370 - REDRAGON/headset_gamer_cadmus_rgb_som_surround_7_1_drivers_53mm_preto_h370_redragon_38269_1_8604e5fb2843b9dea0ce2b2301697661.webp"
+                  alt="headset_gamer_cadmus_rgb_som_surround_7_1_drivers_53mm_preto_h370_redragon"
+                  class="card-img-top w-50 h-50 img-fluid"
+                />
+                <div class="card-body mt-4">
+                  <p class="card-category secondary-color">HEADSET GAMER CADMUS RGB SOM SURROUND 7.1 DRIVERS 53MM PRETO H370 - REDRAGON</p>
+                  <h5 class="card-title">HEADSET GAMER CADMUS RGB - SURROUND 7.1 H370 - REDRAGON</h5>
+                  <p class="card-text text-success">R$ 390,00</p>
+                  <a
+                    href="https://wa.me/61994107771"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card primary-bg-color">
+                <img
+                  src="imagens/produtos/fones/GAMER/HEADSET GAMER HERO BRANCO H530-W - REDRAGON/headset_gamer_hero_branco_h530_w_redragon_36217_1_f5d65fbf5a9b986c778c08f5e5b818c7.webp"
+                  alt="headset_gamer_hero_branco_h530_w_redragon"
+                  class="card-img-top w-50 h-50 img-fluid"
+                />
+                <div class="card-body mt-4">
+                  <p class="card-category secondary-color">HEADSET GAMER HERO BRANCO H530-W - REDRAGON</p>
+                  <h5 class="card-title">HEADSET GAMER HERO - REDRAGON</h5>
+                  <p class="card-text text-success">R$ 550,00</p>
+                  <a
+                    href="https://wa.me/61994107771"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <!-- MAPA -->
     <div class="container-fluid" id="mapa">
-        <h2 class="tittle primary-color text-center">Sua Loja: <i class="bi bi-geo-alt"></i></h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d122869.14962307848!2d-47.86177420009627!3d-15.769066703003107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x935a3dd0a943c9e9%3A0xab91a2a7a96bf4c5!2sQ%2018%20Em%20frente%20ao%20bal%C3%A3o%20da%20avenida%20comercial%20quadra%2018%20conjunto%2014%20loja%2017%20-%20Parano%C3%A1%2C%20Bras%C3%ADlia%20-%20DF%2C%2071571-817!3m2!1d-15.769082099999999!2d-47.7793746!5e0!3m2!1spt-PT!2sbr!4v1741899145673!5m2!1spt-PT!2sbr" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2 class="tittle primary-color text-center">
+        Sua Loja: <i class="bi bi-geo-alt"></i>
+      </h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d122869.14962307848!2d-47.86177420009627!3d-15.769066703003107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x935a3dd0a943c9e9%3A0xab91a2a7a96bf4c5!2sQ%2018%20Em%20frente%20ao%20bal%C3%A3o%20da%20avenida%20comercial%20quadra%2018%20conjunto%2014%20loja%2017%20-%20Parano%C3%A1%2C%20Bras%C3%ADlia%20-%20DF%2C%2071571-817!3m2!1d-15.769082099999999!2d-47.7793746!5e0!3m2!1spt-PT!2sbr!4v1741899145673!5m2!1spt-PT!2sbr"
+        width="80%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
     <!-- GALLERY -->
     <div class="container-fluid" id="gallery">
-        <div class="row">
-            <div class="col-6 col-md-2 image-container" id="insta1"></div>
-            <div class="col-6 col-md-2 image-container" id="insta2"></div>
-            <div class="col-6 col-md-2 image-container" id="insta3"></div>
-            <div class="col-6 col-md-2 image-container" id="insta4"></div>
-            <div class="col-6 col-md-2 image-container" id="insta5"></div>
-            <div class="col-6 col-md-2 image-container" id="insta6"></div>
-        </div>
+      <div class="row">
+        <div class="col-6 col-md-2 image-container" id="insta1"></div>
+        <div class="col-6 col-md-2 image-container" id="insta2"></div>
+        <div class="col-6 col-md-2 image-container" id="insta3"></div>
+        <div class="col-6 col-md-2 image-container" id="insta4"></div>
+        <div class="col-6 col-md-2 image-container" id="insta5"></div>
+        <div class="col-6 col-md-2 image-container" id="insta6"></div>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <footer id="footer">
-        <div class="container-fluid" id="footer-links-container">
-            <div class="row">
-                <div class="col-12 col-md-4 footer-collumn">
-                    <h3 class="black-text">Páginas</h3>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
-                        <li class="mb-2"><a href="#" class="secondary-color">Categorias</a></li>
-                        <li class="mb-2"><a href="#" class="secondary-color">Promoções</a></li>
-                        <li class="mb-2"><a href="#" class="secondary-color">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 footer-collumn" id="footer-center">
-                    <h3 class="black-text">InTime</h3>
-                    <p class="secondary-color">Alguma dúvida? Ligue para nós!</p>
-                    <p class="store-phone danger-color"><i class="bi bi-telephone"> (61) 9 9999-9999</i></p>
-                </div>
-                <div class="col-12 col-md-4 footer-collumn">
-                    <h3 class="black-text">Informações</h3>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="secondary-color">Política de Privacidade</a></li>
-                        <li class="mb-2"><a href="#" class="secondary-color">Política de Enetregas</a></li>
-                        <li class="mb-2"><a href="#" class="secondary-color">Rastreio de pedido</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid" id="footer-links-container">
+        <div class="row">
+          <div class="col-12 col-md-4 footer-collumn">
+            <h3 class="black-text">Páginas</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
+              <li class="mb-2">
+                <a href="#" class="secondary-color">Categorias</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="secondary-color">Promoções</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="secondary-color">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 footer-collumn" id="footer-center">
+            <h3 class="black-text">NOVA 3R</h3>
+            <p class="secondary-color">Alguma dúvida? Ligue para nós!</p>
+            <p class="store-phone danger-color">
+              <i class="bi bi-telephone"> (61) 9 9999-9999</i>
+            </p>
+          </div>
+          <div class="col-12 col-md-4 footer-collumn">
+            <h3 class="black-text">Informações</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="secondary-color">Política de Privacidade</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="secondary-color">Política de Enetregas</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="secondary-color">Rastreio de pedido</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="container-fluid" id="newsletter-container">
-            <div class="col-12">
-                <div class="row">
-                    <p class="light-color">Se inscreva para receber promoções no E-mail:</p>
-                    <form class="d-flex" id="news-form">
-                        <i class="bi bi-envelope primary-color"></i>
-                        <input type="email" class="form-control me-2" placeholder="Insira o seu E-mail"/>
-                        <button class="btn primary-bg-color" type="submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-12" id="social-container">
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-whatsapp"></i>
-            </div>
-            <div class="container" id="copy-container">
-                <p>Todos os Direitos reservados @2022 <span class="primary-color">Robert Henrique</span> - Seu sistema adequado.</p>
-            </div>
-            <div class="container text-light justify-content-center align-items-center">
-                <a class="text-light justify-content-center align-items-center aligm-self-center" href="https://www.flaticon.com/br/icones-gratis/torre-de-computador" title="torre de computador ícones">Torre de computador ícones criados por Ahmad Zalat - Flaticon</a>
-            </div>
+      </div>
+      <div class="container-fluid" id="newsletter-container">
+        <div class="col-12">
+          <div class="row">
+            <p class="light-color">
+              Se inscreva para receber promoções no E-mail:
+            </p>
+            <form class="d-flex" id="news-form">
+              <i class="bi bi-envelope primary-color"></i>
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Insira o seu E-mail"
+              />
+              <button class="btn primary-bg-color" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
+        <div class="col-12" id="social-container">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-whatsapp"></i>
+        </div>
+        <div class="container" id="copy-container">
+          <p>
+            Todos os Direitos reservados @2022
+            <span class="primary-color">Robert Henrique</span> - Seu sistema
+            adequado.
+          </p>
+        </div>
+        <div
+          class="container text-light justify-content-center align-items-center"
+        >
+          <a
+            class="text-light justify-content-center align-items-center aligm-self-center"
+            href="https://www.flaticon.com/br/icones-gratis/torre-de-computador"
+            title="torre de computador ícones"
+            >Torre de computador ícones criados por Ahmad Zalat - Flaticon</a
+          >
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

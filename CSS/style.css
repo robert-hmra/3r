@@ -562,6 +562,7 @@ iframe{
 
 /* GALLERY */
 #gallery .image-container{
+    background-color: white;
     margin-top: 90px;
     background-size: contain;
     background-position:center;
@@ -575,22 +576,22 @@ iframe{
     border-color: #ff2323;
 }
 #insta1{
-    background-image: url(../imagens/produtos/fones/fone\ 3.webp);
+    background-image: url(../imagens/produtos/monitor/MONITOR\ GAMER\ DX240ZG\ 24p\ IPS\ FHD\ 1MS\ 144HZ\ FREESYNC\ HDMI:DP\ -\ DUEX/monitor_gamer_dx240zg_24p_ips_fhd_1ms_144hz_freesync_hdmi_dp_duex_38249_1_dbc2a92429e29b6ff5d8cefb5471e2aa.webp);
 }
 #insta2{
-    background-image: url(../imagens/produtos/fones/fone\ 1.png);
+    background-image: url(../imagens/produtos/teclado/gamer/TECLADO\ MECÂNICO\ GAMER\ MITRA\ RGB\ ABNT2\ SWITCH\ BROWN\ ROSA\ E\ BRANCO\ K551PW-RGB-PT-BROWN\ -\ REDRAGON/teclado_mecanico_gamer_mitra_rgb_abnt2_switch_brown_rosa_e_branco_k551pw_rgb_pt_brown_redragon_39373_4_f8a2eb5b95ca3b5523566fb548a6a124.webp);
 }
 #insta3{
-    background-image: url(../imagens/produtos/mouse/mouse\ 4.webp);
+    background-image: url(../imagens/produtos/monitor/MONITOR\ GAMER\ DX240ZG\ 24p\ IPS\ FHD\ 1MS\ 144HZ\ FREESYNC\ HDMI:DP\ -\ DUEX/monitor_gamer_dx240zg_24p_ips_fhd_1ms_144hz_freesync_hdmi_dp_duex_38249_1_dbc2a92429e29b6ff5d8cefb5471e2aa.webp);
 }
 #insta4{
-    background-image: url(../imagens/produtos/teclado/teclado\ 1.png);
+    background-image: url(../imagens/produtos/fones/pasta\ sem\ título\/Fone\ de\ Ouvido\ EP-TWS-60BK\ Preto\ -\ C3Tech/fone_de_ouvido_ep_tws_60bk_preto_c3tech_41941_1_334fec566e5da4467dca7f65a14a2258.webp);
 }
 #insta5{
-    background-image: url(../imagens/produtos/teclado/teclado\ 4.webp);
+    background-image: url(../imagens/produtos/mouse/basico/Mouse\ BM-4049\ 1200DPI\ 3\ Botoes\ USB\ Preto\ -\ Redragon/mouse_bm_4049_1200dpi_3_botoes_usb_preto_redragon_42887_1_e4d5814c7c069368a1836260cf1c0bb6.webp);
 }
 #insta6{
-    background-image: url(../imagens/produtos/mouse/mouse\ 3.avif);
+    background-image: url(../imagens/produtos/fones/fone\ destque.webp);
 }
 
 /* FOOTER*/ 
@@ -678,4 +679,12 @@ iframe{
 #copy-container{
     text-align: center;
     padding: 30px;
+}
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+
 }
