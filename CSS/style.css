@@ -39,6 +39,7 @@ body{
 
 .card{
     background-color: rgb(255, 255, 255) !important;
+    padding: 0;
 }
 li,a, li:hover, a:hover{
     background-color: transparent !important;
@@ -51,9 +52,8 @@ li,a, li:hover, a:hover{
     max-width: max-content;
     min-width: 100dvw;
     background-color: rgb(0, 0, 0);
-    backdrop-filter: blur( 20px );
     border-bottom: 2px solid  rgb(255, 59, 15);
-    z-index: 10 !important;
+    z-index: 200 !important;
 }
 #navbar .navbar-nav{
     flex-direction: row;
@@ -103,19 +103,29 @@ li,a, li:hover, a:hover{
 }
 
 @media (max-width: 768px) {
+    #navbar{
+        position: fixed;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    #navbar .navbar-nav i{
+        display: none;
+    }
     h2{
         font-size: 24px !important;
     }
     h3{
         font-size: 28px !important;
     }
-    .ul-logo{
-        position: absolute;
-        right: 0;
-        top:70px;
-        line-height: 0;
-        height: 0;
+    .navbar-toggler{
+        z-index: 1000;
+    }
+    #navbar .ul-logo.show{
+        height: 0 !important;
         display: block;
+    }
+    #navbar .float-left{
+        justify-content: space-bet!important;
     }
     .navbar-toggler{
         line-height: 60px !important;
@@ -167,10 +177,8 @@ li,a, li:hover, a:hover{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 178px !important;
-        min-width: max-content;
-        max-height: 200px;
-
+        height: 80px !important;
+        width: auto !important;
     }
 
     #produto-destaque{
@@ -194,10 +202,8 @@ li,a, li:hover, a:hover{
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 178px !important;
-        min-width: max-content;
-        max-width: fit-content;
-        max-height: 200px;
+        height: 80px !important;
+        width:  80px !important;
 
     }
     .dropdown-submenu:first{
@@ -207,6 +213,11 @@ li,a, li:hover, a:hover{
         left: 0 !important;
     }
 
+}
+.card img{
+    margin: 0 auto!important;
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
 }
 
 
@@ -237,6 +248,7 @@ li,a, li:hover, a:hover{
         justify-content:start !important;
     }
 }
+
 #news-form input{
     background-color: transparent;
     border: none;
@@ -276,7 +288,7 @@ li,a, li:hover, a:hover{
 
 /* BANNERS*/
 #banners-container{
-    padding: 0 ;
+    padding: 0;
 }
 .carousel-caption{
     bottom: 0px !important;
@@ -371,6 +383,11 @@ li,a, li:hover, a:hover{
         max-width: 30%;
     }
 }
+@media (max-width: 768px) {
+    #mini-banners{
+        margin-top: 70px;
+    }
+}
 #mini-banners .col-12 h2{
     text-transform: uppercase;
     max-width: 50px;
@@ -433,6 +450,11 @@ li,a, li:hover, a:hover{
 @media (min-width: 768px) {
     .tittle{
         text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    #best-sellers {
+        padding-top: 100px !important;
     }
 }
 
@@ -558,6 +580,16 @@ li,a, li:hover, a:hover{
 }
 iframe{
     border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+    #mapa{
+        padding: 50px 10px;
+    }
+    iframe{
+        width: 100% !important;
+        height: 300px !important;
+    }
+    
 }
 
 /* GALLERY */
