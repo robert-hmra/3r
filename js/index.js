@@ -27,4 +27,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    let whatsappNumber = "61994107771"; // Seu número do WhatsApp
+
+    document.querySelectorAll(".card-body").forEach((card) => {
+        let productName = card.querySelector(".card-title").innerText;
+        let message = encodeURIComponent(`Olá, tenho interesse no produto: ${productName} 😁`);
+        let whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+        card.querySelector(".whatsapp-link").href = whatsappLink;
+    });
 });
