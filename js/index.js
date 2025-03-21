@@ -58,19 +58,18 @@
     // Função que será chamada quando o botão for clicado
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".btn-descricao-produto").forEach(botao => {
-    botao.addEventListener("click", function() {
-        const card = this.closest(".card");
-        const nome = card.querySelector(".card-body .card-category").textContent;
-        const preco = card.querySelector(".card-body .card-text").textContent.replace("Preço: R$ ", "");
-        const imagem = card.querySelector(".card-img-top").src;
+        botao.addEventListener("click", function() {
+            const card = this.closest(".card");
+            const nome = card.querySelector(".card-body .card-category").textContent;
+            const preco = card.querySelector(".card-body .card-text").textContent.replace("Preço: R$ ", "").replace(".", "");
+            const imagem = card.querySelector(".card-img-top").src;
 
-        // Gerando o nome do produto para passar como parâmetro
-        const nomeProduto = nome.replace(/\s+/g, '-').toLowerCase(); // Formato para URLert
-        const produtoID = "1230"; // O ID do produto
-        window.location.href = `../pages/detalhes.html?nome=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}&imagem=${imagem}&produto=${encodeURIComponent(nomeProduto)}&produtoID=${encodeURIComponent(produtoID)}`;
+            // Gerando o nome do produto para passar como parâmetro
+            const nomeProduto = nome.replace(/\s+/g, '-').toLowerCase(); // Formato para URLert
+            const produtoID = "1230"; // O ID do produto
+            window.location.href = `../pages/detalhes.html?nome=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}&imagem=${imagem}&produto=${encodeURIComponent(nomeProduto)}&produtoID=${encodeURIComponent(produtoID)}`;
+        });
     });
-});
-
     // Função para redirecionar para a página de descrição do produto ao clicar na imagem
     document.querySelectorAll(".card-img-top").forEach(img => {
         img.addEventListener("click", function() {
@@ -82,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
     const button = document.querySelector("button");
     button.addEventListener("click", function() {
         const cepDestino = document.getElementById("cep").value;
@@ -105,9 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-//imagens/produtos/teclado/sem%20fio/Teclado%20Sem%20Fio%20Bluetooth%20K-BT40BK%20Preto%20Mini%20-%20C3Tech/teclado_sem_fio_bluetooth_k_bt40bk_preto_mini_c3tech_41757_1_b7682930fe179d161a6754aa4ff8c46f.webp
-
-    
     btn.addEventListener("click", function () {
         // Conta quantos grupos estão visíveis
         let gruposVisiveis = Array.from(grupos).filter(g => g.style.display !== "none").length;
@@ -183,7 +178,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".card-body").forEach((card) => {
         let productName = card.querySelector(".card-title").innerText;
-        let message = encodeURIComponent(`Olá, venho pela loja online! Tenho interesse no produto: ${productName} 🤩, o produto está disponível?`);
+        let productValor = card.querySelector(".card-text").innerText;
+        let message = encodeURIComponent(`Olá, venho pela loja online! Tenho interesse no produto: ${productName} 🤩, de valor: ${productValor} o produto está disponível?`);
         let whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 
         card.querySelector(".whatsapp-link").href = whatsappLink;

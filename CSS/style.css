@@ -62,7 +62,7 @@ li,a, li:hover, a:hover{
     }
 }
 #produto{
-    padding: 50px;
+    padding: 0 50px;
     background-color: #ffffff;
     color: #101010;
 }
@@ -82,6 +82,7 @@ li,a, li:hover, a:hover{
     font-size: 1.5rem;
     margin-top: 0 !important;
     text-align: start;
+    text-transform: capitalize !important;
 }
 .descricao-text{
     color: rgba(0, 0, 0, 0.8);
@@ -91,9 +92,9 @@ li,a, li:hover, a:hover{
     text-align: start;
 }
 .textos{
-    white-space: pre-wrap;
     font-size: .875rem;
     line-height: 1.0;
+    white-space: pre-wrap;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal; /* Garante que o texto comece corretamente */
@@ -103,6 +104,7 @@ li,a, li:hover, a:hover{
     background-color: #ffffff;
 }
 .title-descricao{
+    text-align: left;
     background-color: rgba(0, 0, 0, .05);
     color: rgba(0, 0, 0, 0.8);
     font-weight: 700; 
@@ -223,6 +225,7 @@ overflow: hidden;
 }
 #navbar .logo img{
     height: 85px;
+    object-fit: cover;
     padding-left: 20px;
 }
 
@@ -322,6 +325,7 @@ overflow: hidden;
     }
     #produto-destaque img{
         width: 100%;
+        object-fit: cover !important;
     }
 
     /* NEW-PRODUCTS */
@@ -430,31 +434,28 @@ overflow: hidden;
 }
 #slider img{
     min-width: 100%;
-    height: 100%;
+    height: 100%;object-fit: cover;
 }
 #slider .img-banner-1{
     background-image: url(../imagens/banner/banner\ 2.avif);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
-
+    height: 100%;object-fit: cover;
 }
 #slider .img-banner-2{
     background-image: url(../imagens/banner/banner\ 7.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
-
+    height: 100%;object-fit: cover;
 }
 #slider .img-banner-3{
     background-image: url(../imagens/banner/banner\ 3.jpeg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
-
+    height: 100%;object-fit: cover;
 }
 @media (min-width: 768px) {
     #slider .carousel-item{
@@ -489,7 +490,9 @@ overflow: hidden;
     justify-content: space-between;
 }
 #mini-banners img{
-    
+    height: 100%;
+    padding-bottom: 10px;
+    object-fit: cover;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -520,6 +523,7 @@ overflow: hidden;
     position: absolute;
     right: 1em;
     bottom: 1em;
+    height: 100%;object-fit: cover;
 }
 #mini-banners .col-12 a{
     font-weight: bold;
@@ -582,9 +586,6 @@ overflow: hidden;
     text-align: center;
     border-radius: 0;
 }
-.card .card-category{
-    font-size: 0.8em;
-}
 .card .card-text{
     margin: 2em 0;
     font-weight: bold;
@@ -643,6 +644,7 @@ overflow: hidden;
 }
 #bottom-banner img{
     width: 175px;
+    height: 100%;object-fit: cover;
 }
 @media (min-width: 768px) {
     #bottom-banner h2{
@@ -681,9 +683,10 @@ overflow: hidden;
     padding: 0;
 }
 .card img{
-    height: 150px !important;
+    height: 80px !important;
     width: auto !important;
     margin: 0 auto;
+    height: 100%;object-fit: cover;
 }
 
 /* MAPA */
@@ -709,7 +712,6 @@ iframe{
 /* GALLERY */
 #gallery .image-container{
     background-color: white;
-    margin-top: 90px;
     background-size: contain;
     background-position:center;
     background-repeat: no-repeat;
@@ -731,7 +733,7 @@ iframe{
     background-image: url(../imagens/produtos/monitor/MONITOR_GAMER_DX240ZG_24p_IPS_FHD_1MS_144HZ_FREESYNC_HDMI:DP_-_DUEX/monitor_gamer_dx240zg_24p_ips_fhd_1ms_144hz_freesync_hdmi_dp_duex_38249_1_dbc2a92429e29b6ff5d8cefb5471e2aa.webp);
 }
 #insta4{
-    background-image: url(../imagens/produtos/fones/wirelessFone_de_Ouvido_EP-TWS-60BK_Preto_-_C3Tech/fone_de_ouvido_ep_tws_60bk_preto_c3tech_41941_1_334fec566e5da4467dca7f65a14a2258.webp);
+    background-image: url(../imagens/produtos/fones/wireless/Fone_de_Ouvido_EP-TWS-60BK_Preto_-_C3Tech/fone_de_ouvido_ep_tws_60bk_preto_c3tech_41941_1_334fec566e5da4467dca7f65a14a2258.webp);
 }
 #insta5{
     background-image: url(../imagens/produtos/mouse/basico/Mouse_BM-4049_1200DPI_3_Botoes_USB_Preto_-_Redragon/mouse_bm_4049_1200dpi_3_botoes_usb_preto_redragon_42887_1_e4d5814c7c069368a1836260cf1c0bb6.webp);
@@ -827,6 +829,7 @@ iframe{
     padding: 30px;
 }
 .card-body .card-category{
+    font-size: 0.8em;
     top: 0 !important;
     width: 100%;
     height: 15px;
@@ -838,9 +841,13 @@ iframe{
     position: relative;
     
 }
-.card-body h5{
+.card-body .card-title{
+    font-size: 0.9rem;
     top: 0 !important;
     height: 70px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card-body{
     text-align: center;

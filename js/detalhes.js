@@ -1,12 +1,16 @@
 // 📌 Pegando os parâmetros da URL
+
 const params = new URLSearchParams(window.location.search);
 const titleProduto = params.get("nome"); 
 const preco = params.get("preco");
+const precoSecon = parseFloat(params.get("preco").replace(",", ".")) - 5;
 const imagemPrincipal = params.get("imagem");
 const produtoID = params.get("produtoID"); 
+console.log(precoSecon, typeof precoSecon);
 // 📌 Preenchendo os elementos do HTML com os dados do produto
 document.getElementById("titleProduto").textContent = titleProduto;
 document.getElementById("preco").textContent = "R$ " + preco;
+document.getElementById("precoSecon").textContent = "R$ " + precoSecon;
 document.getElementById("imagem").src = imagemPrincipal;
 document.getElementById("imagem").alt = titleProduto;
 
