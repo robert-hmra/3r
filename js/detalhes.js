@@ -14,6 +14,9 @@ document.getElementById("precoSecon").textContent = "R$ " + precoSecon;
 document.getElementById("imagem").src = imagemPrincipal;
 document.getElementById("imagem").alt = titleProduto;
 
+
+
+
 // 📌 Obtendo o diretório base das imagens (removendo o nome do arquivo da URL)
 const pastaImagens = imagemPrincipal
     .substring(0, imagemPrincipal.lastIndexOf("/"))

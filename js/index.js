@@ -2,7 +2,7 @@
  
       // Função para calcular o frete
       function calcularFrete(cepDestino) {
-        const cepOrigem = "71571817"; // CEP de origem (Brasília)
+        const cepOrigem = "71593495"; // CEP de origem (Brasília)
 
         // Parâmetros padrão
         const peso = 1; // Peso em kg
