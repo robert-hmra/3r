@@ -146,41 +146,41 @@ overflow: hidden;
 }
 
 
-.btn-hide-show:hover{
+.btn-hide-show {
     background-color: transparent !important;
 }
 .btn-hide-show,
 #produto-destaque .btn{
+    background-color: transparent !important;
+    color: #e2e2e2 !important;
+    position: relative;
+    border: none;
     border-bottom: 2px solid #1f9e23dc;
     border-top: 0.5px solid #1f9e23dc;
     border-right: 0.1px solid #1f9e23dc;
     border-left: 2px solid #1f9e23dc;
-    color: #e2e2e2 !important;
-    border: none;
-    position: relative;
-    background-color: transparent !important;
 }
 .btn-hide-show::before,
 .btn-hide-show::after,
 #produto-destaque .btn::before,
 #produto-destaque .btn::after{
     content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: #1f9e2300;
     border-bottom: 2px solid #1f9e23dc;
     border-top: 0.5px solid #1f9e23dc;
     border-right: 0.1px solid #1f9e23dc;
     border-left: 2px solid #1f9e23dc;
+    border-radius: 5px;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     opacity: .7;
     z-index: -1;
-    margin: 0 auto;
     top: 0;
     left: 0;
     bottom:0;
     right: 0;
-    border-radius: 5px;
 }
 @keyframes pulsar{
     100%{
